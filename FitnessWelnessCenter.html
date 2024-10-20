@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Wellness Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #e9ecef;
+        }
+        header {
+            background: #007bff;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .services, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .service, .testimonial {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 20px;
+            background: #f7f7f7;
+            border-radius: 5px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #007bff;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        form button:hover {
+            background: #0056b3;
+        }
+        .schedule {
+            display: flex;
+            flex-direction: column;
+        }
+        .class {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f7f7f7;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fitness & Wellness Center</h1>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Personal Training</h3>
+            <p>One-on-one sessions tailored to your fitness goals.</p>
+        </div>
+        <div class="service">
+            <h3>Group Classes</h3>
+            <p>Fun and engaging classes with certified instructors.</p>
+        </div>
+        <div class="service">
+            <h3>Nutritional Counseling</h3>
+            <p>Personalized nutrition plans to support your fitness journey.</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>"The trainers are fantastic! I've never felt better!"</p>
+            <strong>- Jane Doe</strong>
+        </div>
+        <div class="testimonial">
+            <p>"A welcoming environment with great classes!"</p>
+            <strong>- John Smith</strong>
+        </div>
+        <div class="testimonial">
+            <p>"I achieved my fitness goals faster than I expected!"</p>
+            <strong>- Sarah Johnson</strong>
+        </div>
+    </div>
+</section>
+
+<section id="schedule">
+    <h2>Class Schedule</h2>
+    <div class="schedule">
+        <div class="class">
+            <span>Yoga</span>
+            <span>Mon, Wed - 6:00 PM</span>
+        </div>
+        <div class="class">
+            <span>Zumba</span>
+            <span>Tue, Thu - 7:00 PM</span>
+        </div>
+        <div class="class">
+            <span>HIIT</span>
+            <span>Fri - 5:00 PM</span>
+        </div>
+        <div class="class">
+            <span>Spin Class</span>
+            <span>Sat - 9:00 AM</span>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Fitness & Wellness Center. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
